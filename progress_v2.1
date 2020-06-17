@@ -1,0 +1,23 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+#Required ncurses-utils package
+
+spin () {
+
+local pid=$!
+local delay=0.05
+local spinstr='|/-\'
+while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
+        local temp=${spinstr#?}
+	tput civis
+        printf "\e[1;94m\r[\e[0m+\e[1;94m] \e[1;92mDownloading Files Please wait...  [\e[1;91m%c\e[1;92m]\e[0m  " "$spinstr"
+        local spinstr=$temp${spinstr%"$temp"}
+        sleep $delay
+        printf "\b\b\b\b\b\b"
+    done
+    printf "   \b\b\b"
+    tput cnorm
+    printf "\e[1;33m[Done]\e[0m"
+    echo ""
+}
+(sleep 10) &> /dev/null & spin
