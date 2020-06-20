@@ -1,0 +1,94 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+#colors
+NC='\033[0m'
+BL='\033[1;90m'   # Black
+R='\033[1;91m'    # Red
+G='\033[1;92m'    # Green
+Y='\033[1;93m'    # Yellow
+B='\033[1;94m'    # Blue
+P='\033[1;95m'    # Purple
+C='\033[1;96m'    # Cyan
+W='\033[1;97m'    # White
+
+command -v tput > /dev/null 2>&1 || apt install ncurses-utils &> /dev/null
+
+trap '' 2
+tput civis
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G█■■■■$NC]  \r"
+sleep 0.5
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■█■■■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■■█■■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■■■█■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■■■■█$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■■■█■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■■█■■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■█■■■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G█■■■■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G█■■■■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■█■■■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■■█■■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■■■█■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■■■■█$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■■■█■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■■█■■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■█■■■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G█■■■■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G█■■■■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■█■■■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■■█■■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■■■█■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■■■■█$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■■■█■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■■█■■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■█■■■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G█■■■■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G█■■■■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■█■■■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■■█■■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■■■█■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■■■■█$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■■■█■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■■█■■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G■█■■■$NC]  \r"
+sleep 0.2
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[$G█■■■■$NC]  \r"
+sleep 0.5
+echo -ne "$B[$G+$NC$B]$NC$G Downloading Files$G $NC[\033[1;92mDone$NC]  \r"
+sleep 0.1
+echo -ne '\n'
+tput cnorm
+trap 5
