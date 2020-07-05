@@ -1,0 +1,26 @@
+#!/usr/bin/bash
+
+spin () {
+
+local pid=$!
+local delay=0.25
+local spinner=( '' '.' '..' '...' )
+
+while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
+
+for i in "${spinner[@]}"
+do
+	tput civis
+	echo -ne "\033[1;94m\r[\e[1;92m+\e[1;94m] Installing Please wait\033[1;92m$i\033[0m   ";
+	sleep $delay
+        printf "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b";
+done
+done
+tput cnorm
+printf "\e[1m[\e[1;92m√\e[0m\e[1m]\e[92m Installation Complete\e\e[0m           ";
+echo "";
+
+}
+trap '' 2
+( sleep 5 ) &> /dev/null & spin
+trap 5
